@@ -1,0 +1,36 @@
+.details {
+    h2 {
+        @include secondary-heading {
+            color: $headings-color;
+        }
+        @include mq(sm) {
+            text-align: center;
+        }
+    }
+    p {
+        @include primary-text {
+            color: $secondary-text-color;
+            width: 90%;
+        }
+        @include mq(sm) {
+            width: 100%;
+        }
+        @include mq(sm) {
+            text-align: center;
+        }
+    }
+    h3 {
+        @include secondary-heading {
+            font-size: .9em;
+            font-weight: bold;
+            color: $secondary-text-color;
+        }
+        @include mq(sm) {
+            font-size: 1.5em;
+            text-align: center;
+        }
+    }
+    @include mq(l) {
+        @include clean;
+    }
+}

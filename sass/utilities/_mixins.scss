@@ -1,0 +1,57 @@
+
+@mixin secondary-heading {
+	font-family: $primary-font;
+	text-align: left;
+	font-weight: 300;
+	font-size: 2.2em;
+	@content;
+}
+@mixin primary-text {
+	font-family: $primary-font;
+	text-align: left;
+	font-size: 0.8em;
+	@content;
+}
+@mixin nowrap {
+	white-space: nowrap;
+}
+@mixin clean {
+	[class*="col"] {
+		padding-left: 0;
+	}
+}
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+@mixin matchtop {
+	margin-top: 0;
+	padding-top: 5%;
+}
+$breakpoints:(
+	'sm':992px,
+	'l':992px,
+	'xl':1600px
+);
+@mixin mq ($break) {
+	@if $break=='sm' {
+		@media (max-width: map-get($breakpoints, 'sm'))
+		{
+			@content;
+		}
+	}
+	@if $break=='l' {
+		@media (min-width: map-get($breakpoints, 'sm'))
+		{
+			@content;
+		}
+	}
+	@if $break=='xl' {
+		@media (min-width: map-get($breakpoints, 'xl'))
+		{
+			@content;
+		}
+	}
+}

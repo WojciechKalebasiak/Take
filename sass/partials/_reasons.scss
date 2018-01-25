@@ -1,0 +1,40 @@
+.reasons {
+    background-color: #82ca9c;
+    .container {
+        @include matchtop;
+        padding-bottom: 5%;
+    }
+    h2 {
+        @include secondary-heading {
+            color: $primary-font-color;
+        }
+        @include mq(sm) {
+            font-size: 2em;
+            text-align: center;
+        }
+    }
+    p {
+        @include primary-text {
+            color: $primary-font-color;
+            line-height: 24px;
+            width: 90%;
+        }
+        @include mq(sm) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    h3 {
+        @include secondary-heading {
+            font-size: .9em;
+            font-weight: bold;
+            color: $primary-font-color;
+        }
+        @include mq(sm) {
+            text-align: center;
+        }
+    }
+    @include mq(l) {
+        @include clean;
+    }
+}

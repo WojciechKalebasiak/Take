@@ -1,0 +1,34 @@
+@media (max-width: 992px) {
+    @for $i from 1 through 12 {
+        .col-sm-#{$i} {
+            width: 8.3333%*$i;
+        }
+    }
+}
+@media (min-width: 992px) {
+    @for $i from 1 through 12 {
+        .col-l-#{$i} {
+            width: 8.3333%*$i;
+        }
+    }
+}
+@media (min-width: 1600px) {
+    @for $i from 1 through 12 {
+        .col-xl-#{$i} {
+            width: 8.3333%*$i;
+        }
+    }
+}
+[class*="col-"]
+{
+	padding: 25px;
+	float: left;
+	position: relative;
+}
+.row {
+	&::after, &::before {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}

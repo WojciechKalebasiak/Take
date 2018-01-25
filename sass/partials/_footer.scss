@@ -1,0 +1,93 @@
+footer {
+    background-color: #192431;
+    .container {
+        @include matchtop;
+        padding-bottom: 5%;
+    }
+    h3 {
+        @include secondary-heading {
+            color: #f6f7fa;
+            font-size: .9em;
+        }
+        @include mq(sm) {
+            @include nowrap();
+            text-align: center;
+        }
+    }
+    p {
+        @include primary-text {
+            color: #f6f7fa;
+            font-size: .75em;
+            line-height: 24px;
+            width: 85%;
+        }
+        @include mq(sm) {
+            width: 100%;
+            font-size: .5em;
+            text-align: center;
+        }
+    }
+    ul {
+        padding: 10px 0;
+        li {
+            padding: 5px 0;
+            @include primary-text;
+            a {
+                transition: color .2s ease;
+                display: block;
+                &:hover {
+                    color: #82ca9c;
+                }
+            }
+            @include mq(sm) {
+                padding: 1px 0;
+                font-size: .5em;
+                text-align: center;
+            }
+        }
+    }
+    form {
+        display: flex;
+        align-items: stretch;
+    }
+    input {
+        display: inline-block;
+        padding: 10px 15px;
+        width: 66%;
+        outline: none;
+        font-size: 20px;
+        transition: all .3s ease-in-out;
+        &:focus {
+            padding: 10px 15px;
+            box-shadow: 0 0 5px #01bcf3;
+            border: 1px solid #01bcf3;
+        }
+        @include mq(sm) {
+            margin-left: auto;
+        }
+    }
+    button {
+        padding: 2px 20px;
+        font-size: 1.5em;
+        background-color: #82ca9c;
+        border: none;
+        color: white;
+    }
+    .footerform {
+        padding-left: 5%;
+        padding-top: 2.2%;
+        p {
+            width: 55%;
+            color: #57697f;
+            @include mq(sm) {
+                text-align: center;
+                width: 100%;
+            }
+        }
+    }
+    .ulhead {
+        @include mq(sm) {
+            font-size: .6em;
+        }
+    }
+}

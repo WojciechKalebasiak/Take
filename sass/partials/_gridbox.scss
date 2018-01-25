@@ -1,0 +1,121 @@
+.gridgbox {
+    padding: 4% 0;
+    .gridgallery {
+        margin-left: 0;
+        @include mq(xl) {
+            margin-left: 10%;
+        }
+    }
+    h2 {
+        @include secondary-heading {
+            color: $primary-font-color;
+            margin: 0;
+        }
+        @include mq(sm) {
+            text-align: center;
+        }
+    }
+    p {
+        @include primary-text {
+            line-height: 24px;
+            color: $primary-font-color;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+        @include mq(sm) {
+            text-align: center;
+        }
+    }
+    a {
+        margin: 5% 0;
+        display: inline-block;
+        font-weight: bold;
+        transition: transform .6s ease-out;
+        @include mq(sm) {
+            display: block;
+            font-size: 1.5em;
+            text-align: center;
+            font-family: $secondary-font;
+        }
+        span {
+            @include mq(sm) {
+                display: none;
+            }
+            padding-left: 10px;
+        }
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    i {
+        transition: transform .5s, color .3s ease-out;
+        @include mq(sm) {
+            display: none;
+        }
+    }
+    [class*="box"] {
+        padding: 2.5%;
+        padding-right: 4%;
+        height: 300px;
+    }
+    .box-design {
+        background-color: #f5989d;
+    }
+    .box-clients {
+        background: url('../images/clients.png') center/cover;
+        p {
+            margin-bottom: 0;
+            @include mq(l) {
+                margin-bottom: 10%;
+            }
+            @include mq(xl) {
+                margin-bottom: 20%;
+            }
+        }
+        a {
+            &:hover+i {
+                transform: scale(2);
+                color: #c52f3e;
+            }
+        }
+    }
+    .box-built {
+        background-color: #615f7d;
+    }
+    .box-shot {
+        background-color: #bd8cbf;
+        h2 {
+            @include nowrap;
+        }
+    }
+    .box-signup {
+        background: url('../images/signup.png') center/cover;
+        p {
+            width: 70%;
+            @include mq(sm) {
+                text-align: center;
+                width: 100%;
+            }
+        }
+        a {
+            &:hover+i {
+                transform: scale(1.5);
+                color: #c52f3e;
+            }
+        }
+    }
+    .box-ppicture {
+        background-color: #82ca9c;
+    }
+    .box-start {
+        background: url('../images/start.png') center/cover;
+        h2 {
+            @include nowrap;
+        }
+    }
+    i {
+        padding-top: 5%;
+        float: right;
+        color: white;
+    }
+}

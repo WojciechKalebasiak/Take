@@ -1,0 +1,59 @@
+.fullimage {
+    background: url('../images/fullimage.jpg') center/cover;
+    height: 850px;
+    .textbox {
+        width: 45%;
+        padding-top: 25%;
+        @include mq(sm) {
+            width: 100%;
+            padding-top: 0;
+        }
+    }
+    h1 {
+        margin-bottom: 0;
+        font-size: 3.8em;
+        text-align: left;
+        font-weight: 300;
+        font-family: $primary-font;
+        color: $primary-font-color;
+        text-align: left;
+        white-space: pre-line;
+        @include mq(sm) {
+            text-align: center;
+            margin-top: 10%;
+            font-size: 3em;
+        }
+    }
+    p {
+        width: 80%;
+        @include primary-text;
+        color: $primary-font-color;
+        line-height: 24px;
+        @include mq(sm) {
+            font-size: 1em;
+            text-align: center;
+            margin-top: 300px;
+            width: 100%;
+        }
+    }
+    a {
+    	display: inline-block;
+        font-weight: bold;
+        transition: transform .5s;
+         &:hover {
+        	transform: scale(1.1);
+        }
+        @include mq(sm) {
+            display: block;
+            font-size: 1.5em;
+            text-align: center;
+            font-family: $secondary-font;
+            margin-top: 5%;
+        }
+        span {
+            @include mq(sm) {
+                display: none;
+            }
+        }
+    }
+}
