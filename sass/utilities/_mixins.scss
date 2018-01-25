@@ -33,7 +33,7 @@
 $breakpoints:(
 	'sm':992px,
 	'l':992px,
-	'xl':1600px
+	'xl':1500px
 );
 @mixin mq ($break) {
 	@if $break=='sm' {

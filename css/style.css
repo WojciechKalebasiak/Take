@@ -71,7 +71,7 @@
 
   .col-l-12 {
     width: 99.9996%; } }
-@media (min-width: 1600px) {
+@media (min-width: 1500px) {
   .col-xl-1 {
     width: 8.3333%; }
 
@@ -175,7 +175,7 @@ header {
         font-size: 1em; } }
   header .iphone {
     display: none; }
-    @media (min-width: 1600px) {
+    @media (min-width: 1500px) {
       header .iphone {
         display: inline-block;
         position: absolute;
@@ -219,7 +219,7 @@ header {
   .text [class*="col-"]:last-of-type {
     padding-top: 110px;
     padding-left: 20px; } }
-@media (min-width: 1600px) {
+@media (min-width: 1500px) {
   .text [class*="col-"]:last-of-type {
     padding-top: 0;
     margin-top: 220px; } }
@@ -237,7 +237,7 @@ header {
   padding: 4% 0; }
   .gridgbox .gridgallery {
     margin-left: 0; }
-    @media (min-width: 1600px) {
+    @media (min-width: 1500px) {
       .gridgbox .gridgallery {
         margin-left: 10%; } }
   .gridgbox h2 {
@@ -297,7 +297,7 @@ header {
       @media (min-width: 992px) {
         .gridgbox .box-clients p {
           margin-bottom: 10%; } }
-      @media (min-width: 1600px) {
+      @media (min-width: 1500px) {
         .gridgbox .box-clients p {
           margin-bottom: 20%; } }
     .gridgbox .box-clients a:hover + i {
